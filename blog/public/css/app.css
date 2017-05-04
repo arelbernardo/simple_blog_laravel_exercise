@@ -1,0 +1,202 @@
+body {
+  margin: 50px 0 0 0;
+  padding: 0;
+  background-color: #E1E5E9;
+  font-family: Roboto-Regular;
+  font-style: normal;
+}
+body .btn {
+  font-family: Roboto-Black;
+  font-size: 14px;
+  text-transform: lowercase;
+}
+body .divider {
+  margin-bottom: 60px;
+}
+body .main_panel_container {
+  margin-top: 50px !important;
+  padding: 30px;
+}
+/*  navigation styles  */
+.nav_bar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #555555;
+  width: 100%;
+}
+.nav_bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.nav_bar li {
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  line-height: 40px;
+  border-bottom: 1px solid #555555;
+}
+.nav_bar .right_nav {
+  float: inherit;
+}
+.nav_bar a {
+  padding: 0px 10px 0px 10px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.3s background-color;
+}
+.nav_bar a:hover {
+  background-color: #000000;
+}
+.nav_bar a:active {
+  background-color: #555555;
+  cursor: default;
+}
+.nav_bar .profile .profile_dropdown_nav .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: #fff;
+}
+.nav_bar .profile .profile_dropdown_nav .dropdown-content ul {
+  border: 1px solid #dddddd;
+}
+.nav_bar .profile:hover .profile_dropdown_nav .dropdown-content {
+  display: block;
+}
+@media screen {
+  .nav_bar {
+    /*@media (max-width: 992px) {
+      ul{
+        width: 710px;
+        text-align: inherit;
+      }
+    }
+
+    @media (max-width: 770px) {
+      ul{
+        width: 690px;
+        text-align: inherit;
+      }
+    }*/
+  }
+}
+@media screen and (min-width: 600px) {
+  .nav_bar li {
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    margin-right: -4px;
+  }
+  .nav_bar .right_nav {
+    float: right;
+  }
+}
+@media screen and (min-width: 1202px) {
+  .nav_bar ul {
+    width: 1110px;
+    text-align: inherit;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nav_bar ul {
+    width: 920px;
+    text-align: inherit;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav_bar ul {
+    width: 710px;
+    text-align: inherit;
+  }
+}
+@media screen and (min-width: 62px) {
+  .nav_bar ul {
+    width: 100%;
+    text-align: inherit;
+  }
+}
+#profile_info_container {
+  background-color: #fff;
+  margin-bottom: 50px;
+}
+#profile_info_container .header {
+  padding: 35px 0px 35px 0;
+}
+#profile_info_container #profile_image {
+  margin-right: 30px;
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+}
+#profile_info_container .profile_name {
+  font-family: Roboto-Regular;
+  font-size: 40px;
+  font-weight: 800;
+  font-style: normal;
+  margin-top: 30px;
+  color: #555555;
+}
+#profile_info_container .profile_position {
+  font-family: Roboto-Light;
+  font-size: 28px;
+  font-style: normal;
+  line-height: 0px;
+  color: #777777;
+}
+@media screen and (max-width: 767px) {
+  #profile_info_container {
+    margin-bottom: 30px;
+  }
+  #profile_info_container .header {
+    float: none !important;
+    text-align: center;
+  }
+  #profile_info_container #profile_name_container {
+    float: none !important;
+  }
+  #profile_info_container #profile_image {
+    display: block;
+    margin: 0 auto;
+  }
+  #profile_info_container .profile_name {
+    margin-top: 0px;
+    font-size: 28px;
+  }
+  #profile_info_container .profile_position {
+    font-size: 15px;
+  }
+}
+#profile_newsfeed .panels {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#profile_newsfeed .section {
+  margin-bottom: 30px;
+}
+#profile_newsfeed .section-inner {
+  background: #fff;
+  padding: 30px;
+}
+#profile_newsfeed .headings {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #555555;
+  font-family: Roboto-Black;
+  font-weight: 800;
+}
+#profile_newsfeed .contents #content {
+  resize: none;
+}
+#profile_newsfeed .contents .item {
+  margin-bottom: 30px;
+}
+#profile_newsfeed .timestamp {
+  color: #999999;
+  font-size: 10px;
+  font-style: normal;
+}
